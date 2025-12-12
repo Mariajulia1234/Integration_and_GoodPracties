@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Maria Júlia</title>
+
+    <style>
+        /* ==== ESTILO GERAL ==== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=60") 
+                        center/cover no-repeat fixed;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* ==== CARD DO PORTFÓLIO ==== */
+        .card {
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 40px;
+            width: 850px;
+            color: #fff;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: fadeIn 1s ease;
+        }
+
+        /* Animação suave */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* ==== DECORAÇÃO ==== */
+        .divider {
+            width: 90px;
+            height: 4px;
+            background: #ffffff;
+            border-radius: 20px;
+            margin: 15px 0 25px 0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 760px) {
+            .card {
+                width: 95%;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            header {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Meu Portfólio</h1>
+        <div class="divider"></div>
+
+        <header>
+            Meu nome é <strong>Maria Júlia</strong>, tenho 15 anos, meu ikigai é dar vida a ideias através do design.
+            Amo transformar conceitos em sites bonitos, funcionais e com aquele toque de personalidade que faz 
+            a diferença. Acredito que cada projeto é uma chance de criar algo único, que comunique bem e cause 
+            uma boa impressão logo de cara.
+            <br><br>
+            Gosto bastante de tecnologia, mesmo ainda não entendendo tudo. Tenho muita vontade de aprender mais 
+            e mergulhar nesse mundo para transformar essa descoberta em novas oportunidades de trabalho e de vida.
+            <br><br>
+            Nas minhas <strong>hard skills</strong>, sei me virar bem com ferramentas como Canva, sites de edição e um 
+            pouco de HTML e CSS. Já nas <strong>soft skills</strong>, destaco minha criatividade, empatia, curiosidade e 
+            vontade constante de aprender.
+            <br><br>
+            Mesmo sem uma formação formal, estou sempre estudando, testando coisas novas e buscando evoluir a 
+            cada projeto.
+        </header>
+    </div>
+
+</body>
+</html>
